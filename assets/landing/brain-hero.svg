@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" role="img" aria-label="Stylised brain with signals travelling along neural pathways">
+<style>
+.p{fill:none;stroke:#7fb2ff;stroke-width:1.4;stroke-opacity:.35}
+.g{fill:none;stroke:#9cc2ff;stroke-width:2;stroke-linecap:round;stroke-opacity:.28}
+.n{fill:#cfe2ff}
+.pulse{fill:#fff}
+.halo{fill:#6aa8ff;opacity:.5}
+.tw{animation:tw 3.2s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.35}50%{opacity:1}}
+@media (prefers-reduced-motion: reduce){.mv{display:none}.tw{animation:none}}
+</style>
+<defs>
+<radialGradient id="bg" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#3b6fe0" stop-opacity=".55"/><stop offset="1" stop-color="#3b6fe0" stop-opacity="0"/></radialGradient>
+<linearGradient id="fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a4fb8" stop-opacity=".55"/><stop offset="1" stop-color="#5b2fb8" stop-opacity=".45"/></linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<ellipse cx="300" cy="200" rx="290" ry="210" fill="url(#bg)"/>
+<!-- cerebellum and brainstem -->
+<path d="M395,300 C420,282 470,276 505,292 C530,304 528,332 500,344 C468,357 420,352 398,334 Z" fill="url(#fill)" stroke="#9cc2ff" stroke-opacity=".7" stroke-width="2"/>
+<path class="g" d="M410,312 C440,300 480,302 510,314 M408,326 C440,318 478,320 506,330"/>
+<path d="M352,300 C362,330 368,360 362,400 L392,400 C394,362 392,330 396,306 Z" fill="url(#fill)" stroke="#9cc2ff" stroke-opacity=".7" stroke-width="2"/>
+<!-- cerebrum -->
+<path d="M118,262 C78,236 66,176 94,128 C124,76 196,46 278,42 C368,38 452,62 504,118 C546,164 548,232 514,276 C498,296 470,302 444,296 C420,312 384,316 352,306 C318,320 262,322 222,310 C186,316 146,296 118,262 Z" fill="url(#fill)" stroke="#a9ccff" stroke-width="2.4"/>
+<!-- gyri -->
+<path class="g" d="M120,200 C140,180 128,150 160,140 C192,130 186,104 222,98 C252,93 262,74 296,76"/>
+<path class="g" d="M150,250 C170,236 168,212 198,206 C230,200 226,170 260,166 C292,162 296,134 330,132 C360,130 372,104 404,104"/>
+<path class="g" d="M236,286 C260,268 290,272 304,250 C318,228 350,236 370,214 C392,190 424,200 444,176 C462,154 486,160 500,146"/>
+<path class="g" d="M314,58 C320,90 352,96 356,126 C360,156 392,160 398,188 C404,214 436,222 446,250 C452,268 470,276 486,272"/>
+<path class="g" d="M440,82 C440,110 466,120 474,146 C482,170 506,178 516,200"/>
+<path class="g" d="M262,296 C286,300 312,292 336,296"/>
+<!-- network -->
+<g filter="url(#glow)">
+<path id="a" class="p" d="M150,190 C200,170 230,150 280,150 S370,120 420,140"/>
+<path id="b" class="p" d="M180,250 C230,230 270,220 320,200 S420,190 470,210"/>
+<path id="c" class="p" d="M240,110 C260,150 280,180 320,200 S380,250 420,270"/>
+<path id="d" class="p" d="M420,140 C440,170 460,190 470,210 S480,250 440,280"/>
+<path id="e" class="p" d="M280,150 C300,120 340,90 380,80"/>
+<path id="f" class="p" d="M150,190 C160,220 170,235 180,250 S220,285 260,290"/>
+<path id="h" class="p" d="M380,80 C400,100 410,120 420,140"/>
+<path id="i" class="p" d="M320,200 C330,240 360,280 375,300 S380,350 378,395"/>
+<g class="n">
+<circle cx="150" cy="190" r="5" class="tw"/><circle cx="280" cy="150" r="6" class="tw" style="animation-delay:.6s"/><circle cx="420" cy="140" r="5" class="tw" style="animation-delay:1.1s"/>
+<circle cx="180" cy="250" r="4.5" class="tw" style="animation-delay:1.7s"/><circle cx="320" cy="200" r="7" class="tw" style="animation-delay:.3s"/><circle cx="470" cy="210" r="5" class="tw" style="animation-delay:2.2s"/>
+<circle cx="240" cy="110" r="4.5" class="tw" style="animation-delay:1.4s"/><circle cx="420" cy="270" r="4.5" class="tw" style="animation-delay:.9s"/><circle cx="380" cy="80" r="4.5" class="tw" style="animation-delay:2.6s"/>
+<circle cx="260" cy="290" r="4" class="tw" style="animation-delay:2s"/><circle cx="440" cy="280" r="4" class="tw" style="animation-delay:1.2s"/>
+</g>
+<g class="mv">
+<circle r="7" class="halo"><animateMotion dur="3.4s" repeatCount="indefinite"><mpath href="#a"/></animateMotion></circle>
+<circle r="3" class="pulse"><animateMotion dur="3.4s" repeatCount="indefinite"><mpath href="#a"/></animateMotion></circle>
+<circle r="7" class="halo"><animateMotion dur="4.2s" begin="-1.3s" repeatCount="indefinite"><mpath href="#b"/></animateMotion></circle>
+<circle r="3" class="pulse"><animateMotion dur="4.2s" begin="-1.3s" repeatCount="indefinite"><mpath href="#b"/></animateMotion></circle>
+<circle r="7" class="halo"><animateMotion dur="3.8s" begin="-2.1s" repeatCount="indefinite"><mpath href="#c"/></animateMotion></circle>
+<circle r="3" class="pulse"><animateMotion dur="3.8s" begin="-2.1s" repeatCount="indefinite"><mpath href="#c"/></animateMotion></circle>
+<circle r="6" class="halo"><animateMotion dur="2.6s" begin="-.7s" repeatCount="indefinite"><mpath href="#d"/></animateMotion></circle>
+<circle r="2.6" class="pulse"><animateMotion dur="2.6s" begin="-.7s" repeatCount="indefinite"><mpath href="#d"/></animateMotion></circle>
+<circle r="6" class="halo"><animateMotion dur="2.2s" begin="-1.6s" repeatCount="indefinite"><mpath href="#e"/></animateMotion></circle>
+<circle r="2.6" class="pulse"><animateMotion dur="2.2s" begin="-1.6s" repeatCount="indefinite"><mpath href="#e"/></animateMotion></circle>
+<circle r="6" class="halo"><animateMotion dur="2.8s" begin="-.4s" repeatCount="indefinite"><mpath href="#f"/></animateMotion></circle>
+<circle r="2.6" class="pulse"><animateMotion dur="2.8s" begin="-.4s" repeatCount="indefinite"><mpath href="#f"/></animateMotion></circle>
+<circle r="6" class="halo"><animateMotion dur="1.8s" begin="-1s" repeatCount="indefinite"><mpath href="#h"/></animateMotion></circle>
+<circle r="2.6" class="pulse"><animateMotion dur="1.8s" begin="-1s" repeatCount="indefinite"><mpath href="#h"/></animateMotion></circle>
+<circle r="6" class="halo"><animateMotion dur="3s" begin="-2.4s" repeatCount="indefinite"><mpath href="#i"/></animateMotion></circle>
+<circle r="2.6" class="pulse"><animateMotion dur="3s" begin="-2.4s" repeatCount="indefinite"><mpath href="#i"/></animateMotion></circle>
+</g>
+</g>
+</svg>
